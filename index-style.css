@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+/* menu and logotype section*/
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext");
+
+}
+
+ul.header__menu {
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 30%;
+    text-transform: uppercase;
+    background-color: #262626;
+    color: #7b7b7c;
+    position: fixed;
+    width: 100%;
+}
+
+.header__menu li {
+    display: inline-block;
+}
+
+.header__menu a {
+    display: block;
+    color: #7b7b7c;
+    text-decoration: none;
+    padding: 25px 10px;
+    position: relative;
+}
+
+.header {
+    position: relative;
+}
+
+img.header__logo {
+    position: absolute;
+    left: 5%;
+    top: -10px;
+    z-index: 3;
+    width: 20%;
+}
+
+.header__logo-text {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+.header__menu a:hover {
+    color: #ffffff;
+}
+
+.header__menu a:hover:before,
+.header__menu a:hover:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #ff0036;
+    left: 25%;
+}
+
+.header__menu a:hover:before {
+top: 0;
+}
+
+.header__menu a:hover:after {
+    bottom: 0;
+}
