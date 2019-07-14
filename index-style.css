@@ -71,24 +71,36 @@ top: 0;
 .header__menu a:hover:after {
     bottom: 0;
 }
-
+/*****************************************************/
 /*Slider options*/
+
+
 .slider {
+    font-size: 0;
     width: 100%;
-    position: relative;
-    height: 60%;
-    max-height: 600px;
-    transition: 2s ease;
     overflow: hidden;
+    position: relative;
 }
 
-.slider .slider__image img{
-    object-fit: cover;
+.slider__wrap {
+    width: 300%;
+    transition: .5s;
+}
+
+.slider__image {
+    width: calc(100%/3);
+    display: inline-block;
+    margin: 0;
+
+}
+
+.slider__image img {
     width: 100%;
     z-index: 1;
 }
-.slider .slider__prev-button,
-.slider .slider__next-button {
+
+.slider #slider__button-left,
+.slider #slider__button-right {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -99,69 +111,57 @@ top: 0;
     font-weight: bold;
     font-size: 40px;
     transition: 0.3s ease;
-    border-radius: 0 3px 3px 0;
     z-index: 2;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
-.slider .slider__next-button {
+.slider #slider__button-right {
     right: 0;
-    border-radius: 3px 0 0 3px;
-
 }
 
-.slider__next-button:hover,
-.slider__prev-button:hover {
+#slider__button-right:hover,
+#slider__button-left:hover {
     color: #ff0036;
 }
 
-.slider .slider__image {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
-    animation-name: fade;
-    animation-duration: 2s;
-}
+/*!*text on the slider*!*/
 
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-/*text on the slider*/
 .slider__text-background {
     width: 100%;
+    overflow: hidden;
     position: absolute;
     top: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.6);
     z-index: 1;
-    padding-top: 200px;
-    padding-left: 375px;
+    padding: 200px 300px;
+    /*margin: auto 0;*/
+    box-sizing: border-box;
+
 }
 
 .slider__text {
+    font-size: initial;
     text-align: center;
     color: white;
-    width: 50%;
+    /*width: 50%;*/
+    z-index: 3;
 }
 
 .slider__text h2 {
     font-family: 'Raleway', sans-serif;
     /*font-weight: bold;*/
+    z-index: 3;
     text-align: center;
 }
 
 span {
     color: #ff0036;
 }
+
+/*===============================*/
+
+
+/*===============================*/

@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Creativia</title>
     <link href="index-style.css" rel="stylesheet">
 </head>
 <body>
 <div class="header" id="home">
-    <img src="Menu-photo/logotype.png" class="header__logo" alt="Logotype border image">
+    <a href="#home"><img src="Menu-photo/logotype.png" class="header__logo" alt="Logotype border image"></a>
     <nav>
         <ul class="header__menu">
             <li><a href="#home">home</a></li>
@@ -22,18 +22,24 @@
         </ul>
     </nav>
 </div>
-<div class="slider">
-    <div class="slider__image">
-        <img src="Menu-photo/slider-img.png" alt="">
+<!--    <a class="slider__prev-button" onclick="minusSlide()">&#10094;</a>-->
+<!--    <a class="slider__next-button" onclick="plusSlide()">&#10095;</a>-->
+
+
+<section class="slider">
+    <div class="slider__wrap" id="slider__wrap-id">
+        <div class="slider__image">
+                <img src="Menu-photo/slider-img.png" alt="">
+        </div>
+        <div class="slider__image">
+            <img src="Menu-photo/slider-image-2.jpg" alt="">
+        </div>
+        <div class="slider__image">
+            <img src="Menu-photo/slider-image-3.jpg" alt="">
+        </div>
     </div>
-    <div class="slider__image">
-        <img src="Menu-photo/slider-image-2.jpg" alt="">
-    </div>
-    <div class="slider__image">
-        <img src="Menu-photo/slider-image-3.jpg" alt="">
-    </div>
-    <a class="slider__prev-button" onclick="minusSlide()">&#10094;</a>
-    <a class="slider__next-button" onclick="plusSlide()">&#10095;</a>
+    <button id="slider__button-left">&lt;</button>
+    <button id="slider__button-right">&gt;</button>
     <div class="slider__text-background">
         <div class="slider__text">
             <h2>why <span>creativia?</span></h2>
@@ -42,7 +48,8 @@
                 ea commodo consequat. </p>
         </div>
     </div>
-</div>
-<script type="text/javascript" src="slider.js"></script>
-</body>
-</html>
+</section>
+
+    <script type="text/javascript" src="slider.js"></script>
+    </body>
+    </html>
