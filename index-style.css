@@ -1,11 +1,13 @@
-body {
-    margin: 0;
-}
+
 /* menu and logotype section*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext');
 @font-face {
     font-family: 'Raleway', sans-serif;
-    src: url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext");
+}
 
+body {
+    margin: 0;
+    /*font-family: 'Raleway', sans-serif;*/
 }
 
 ul.header__menu {
@@ -143,6 +145,7 @@ top: 0;
 }
 
 .slider__text {
+    font-family: 'Raleway', sans-serif;
     font-size: initial;
     text-align: center;
     color: white;
