@@ -1,35 +1,38 @@
+const slide = document.getElementById('sl');
+const left = document.getElementById('left');
+const right = document.getElementById('right');
+let translate = 0;
 
-/* Индекс слайда по умолчанию */
-var slideIndex = 1;
-showSlides(slideIndex);
-
-/* Функция увеличивает индекс на 1, показывает следующй слайд*/
-function plusSlide() {
-    showSlides(slideIndex += 1);
-}
-
-/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
-function minusSlide() {
-    showSlides(slideIndex -= 1);
-}
-
-/* Устанавливает текущий слайд */
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-/* Основная функция слайдера */
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("slider__image");
-    if (n > slides.length) {
-        slideIndex = 1
+right.addEventListener('click', function () {
+    switch (translate) {
+        case 0 :
+            slide.style.transform = `translateX(-33.3%)`;
+            translate++;
+            break;
+        case 1 :
+            slide.style.transform = `translateX(-66.6%)`;
+            translate++;
+            break;
+        case 2 :
+            slide.style.transform = `translateX(0%)`;
+            translate = 0;
+            break;
     }
-    if (n < 1) {
-        slideIndex = slides.length
+})
+
+left.addEventListener('click', function () {
+    switch (translate) {
+        case 0 :
+            slide.style.transform = `translateX(-66.6%)`;
+            translate = 2;
+            break;
+        case 1 :
+            slide.style.transform = `translateX(0%)`;
+            translate--;
+            break;
+        case 2 :
+            slide.style.transform = `translateX(-33.3%)`;
+            translate--;
+            break;
     }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-}
+})
