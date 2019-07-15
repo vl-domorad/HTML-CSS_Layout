@@ -7,7 +7,6 @@
 
 body {
     margin: 0;
-    /*font-family: 'Raleway', sans-serif;*/
 }
 
 ul.header__menu {
@@ -139,32 +138,59 @@ top: 0;
     background-color: rgba(0,0,0,0.6);
     z-index: 1;
     padding: 200px 300px;
-    /*margin: auto 0;*/
     box-sizing: border-box;
 
 }
 
 .slider__text {
     font-family: 'Raleway', sans-serif;
-    font-size: initial;
+    font-size: 15px;
     text-align: center;
     color: white;
-    /*width: 50%;*/
     z-index: 3;
 }
 
 .slider__text h2 {
     font-family: 'Raleway', sans-serif;
-    /*font-weight: bold;*/
     z-index: 3;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 span {
     color: #ff0036;
 }
 
-/*===============================*/
+/*Buttons on slider*/
+.slider__button-features,
+.psd {
+    font-family: 'Raleway', sans-serif;
+    width: 175px;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    bottom: 42%;
+    background-color: #262626;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    box-sizing: border-box;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+}
 
+.slider__button-features {
+    left: 37%;
+}
 
-/*===============================*/
+.slider__button {
+    right: 37%;
+}
+
+.slider__button-features:hover,
+.psd:hover {
+    background-color: #ff0036;
+}
+
