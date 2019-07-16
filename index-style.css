@@ -148,13 +148,14 @@ top: 0;
     text-align: center;
     color: white;
     z-index: 3;
+    line-height: 150%;
 }
 
-.slider__text h2 {
+.slider__text h1 {
     font-family: 'Raleway', sans-serif;
     z-index: 3;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 span {
@@ -193,4 +194,31 @@ span {
 .psd:hover {
     background-color: #ff0036;
 }
+/*****************************************************/
+/*about section*/
+.about-block {
+    margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
+}
 
+.about-block__description {
+    text-align: center;
+    font-weight: bold;
+    color: #666666;
+}
+
+h1.about-block__description{
+    color: black;
+    margin-bottom: 30px;
+}
+
+.about-block__main-content {
+    color: #666666;
+    padding: 60px;
+    box-sizing: border-box;
+}
+.about-block__main-content-left-column,
+img.about-block__main-content-right-column {
+    width: 49%;
+    display: inline-block;
+}
