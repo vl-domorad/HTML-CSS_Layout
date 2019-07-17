@@ -217,16 +217,18 @@ span {
     padding: 100px;
 }
 
-.about-block__description {
+.description {
     text-align: center;
     font-weight: bold;
     color: #666666;
     padding: 0 0 80px 0;
+    font-family: 'Raleway', sans-serif;
 }
 
-.about-block__description h1{
+.description h1{
     color: black;
     margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .about-block__main-content {
@@ -412,5 +414,79 @@ span {
     position: absolute;
     margin: 0 auto;
     bottom: -10px;
-    left: 32%;
+    left: 32vw;
+}
+
+/*****************************************************/
+/*product features section*/
+div.product-features {
+    padding: 100px;
+}
+
+.product-features__top h1 {
+    margin-top: 0;
+}
+
+.product-features__main-content {
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.product-features__button {
+    display: block;
+    width: 16%;
+    height: 45px;
+    position: absolute;
+    z-index: 2;
+    background-color: #333333;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    box-sizing: border-box;
+    padding: 13px 0;
+    text-align: center;
+    text-decoration: none;
+    bottom: 100px;
+    left: 42%;
+}
+
+.product-features__button:hover {
+    background-color: #ff0036;
+}
+
+.portfolio-block__left-sidebar,
+.portfolio-block__right-sidebar {
+    position: absolute;
+    top: 30px;
+    list-style-type: none;
+}
+
+.product-features__main-content > ul > li{
+    width: 25vw;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.portfolio-block__left-sidebar li{
+    padding: 10px 60px 10px 30px;
+    text-align: right;
+}
+
+.portfolio-block__right-sidebar {
+    right: 35px;
+}
+
+.portfolio-block__right-sidebar li {
+    padding: 10px 30px 10px 60px;
+    text-align: left;
+}
+
+.product-features__main-content > ul > li:hover {
+    background-color: #ff0036;
+    color: white;
 }
