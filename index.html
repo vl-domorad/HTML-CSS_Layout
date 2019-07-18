@@ -8,21 +8,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="header" id="home">
-    <a href="#home"><img src="images/logotype.png" class="header__logo" alt="Logotype border image"></a>
-    <nav>
-        <ul class="header__menu">
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about us</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#product">clients</a></li>
-            <li><a href="#">team</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-    </nav>
-</div>
+<!--<div class="header" id="home">-->
+<!--    <a href="#home"><img src="images/logotype.png" class="header__logo" alt="Logotype border image"></a>-->
+<!--    <nav>-->
+<!--        <ul class="header__menu">-->
+<!--            <li><a href="#home">home</a></li>-->
+<!--            <li><a href="#about">about us</a></li>-->
+<!--            <li><a href="#portfolio">portfolio</a></li>-->
+<!--            <li><a href="#product">clients</a></li>-->
+<!--            <li><a href="#clients">team</a></li>-->
+<!--            <li><a href="#">services</a></li>-->
+<!--            <li><a href="#">blog</a></li>-->
+<!--            <li><a href="#">contact</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</div>-->
 
 <section class="slider">
     <div class="slider__wrap" id="slider__wrap-id">
@@ -39,23 +39,26 @@
     <button id="slider__button-left">&lt;</button>
     <button id="slider__button-right">&gt;</button>
     <div class="slider__text-background">
-        <div class="slider__text">
-            <h1>why <span>creativia?</span></h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
-            </p>
-            <a href="#" class="slider__button-features">Features</a>
-            <a href="#" class="slider__button psd">Free PSD</a>
+        <div class="slider__text-wrap">
+            <div class="slider__text">
+                <h1>why <span>creativia?</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+                <div class="slider__buttons">
+                    <a href="#" class="slider__button-features">Features</a>
+                    <a href="#" class="slider__button psd">Free PSD</a>
+                </div>
+            </div>
         </div>
     </div>
-
 </section>
 <script type="text/javascript" src="slider.js"></script>
 
 <div class="about-block" id="about">
-    <div class="about-block description">
+    <div class="about-block_head description">
         <h1>about <span>creativia</span></h1>
         <p>
             Lorem ipsum dolor sit amet, ei duis <span>commune est</span>. Unum noluisse quo ea, no posse
@@ -95,44 +98,45 @@
             </div>
         </div>
         <img src="images/about__image.png" class="about-block__main-content-right-column" alt="">
-        <img src="images/scroll-bar.png" class="about-block scroll-bar" alt="">
-        <div class="about-block__bottom">
-            <div class="about-block__bottom-elements">
-                <div class="about-block__bottom-icons heart">
-                    <svg viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="about-block__bottom-icon">
-                        <polygon points="30.1,84.5 10.2,50 30.1,15.5 69.9,15.5 89.8,50 69.9,84.5"></polygon>
-                    </svg>
-                </div>
-                <h2>Flat design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="about-block__scroll">
+    </div>
+    <div class="about-block__bottom">
+        <div class="about-block__bottom-elements">
+            <div class="about-block__bottom-icons heart">
+                <svg viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="about-block__bottom-icon">
+                    <polygon points="30.1,84.5 10.2,50 30.1,15.5 69.9,15.5 89.8,50 69.9,84.5"></polygon>
+                </svg>
             </div>
-            <div class="about-block__bottom-elements">
-                <div class="about-block__bottom-icons check">
-                    <svg viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="about-block__bottom-icon">
-                        <polygon points="30.1,84.5 10.2,50 30.1,15.5 69.9,15.5 89.8,50 69.9,84.5"></polygon>
-                    </svg>
-                </div>
-                <h2>retina ready</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            <h2>Flat design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+        </div>
+        <div class="about-block__bottom-elements">
+            <div class="about-block__bottom-icons check">
+                <svg viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="about-block__bottom-icon">
+                    <polygon points="30.1,84.5 10.2,50 30.1,15.5 69.9,15.5 89.8,50 69.9,84.5"></polygon>
+                </svg>
             </div>
-            <div class="about-block__bottom-elements">
-                <div class="about-block__bottom-icons phone">
-                    <svg viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="about-block__bottom-icon">
-                        <polygon points="30.1,84.5 10.2,50 30.1,15.5 69.9,15.5 89.8,50 69.9,84.5"></polygon>
-                    </svg>
-                </div>
-                <h2>responsive</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            <h2>retina ready</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+        </div>
+        <div class="about-block__bottom-elements">
+            <div class="about-block__bottom-icons phone">
+                <svg viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="about-block__bottom-icon">
+                    <polygon points="30.1,84.5 10.2,50 30.1,15.5 69.9,15.5 89.8,50 69.9,84.5"></polygon>
+                </svg>
             </div>
-            <div class="about-block__bottom-elements">
-                <div class="about-block__bottom-icons fire">
-                    <svg viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="about-block__bottom-icon">
-                        <polygon points="30.1,84.5 10.2,50 30.1,15.5 69.9,15.5 89.8,50 69.9,84.5"></polygon>
-                    </svg>
-                </div>
-                <h2>clean&useful</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            <h2>responsive</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+        </div>
+        <div class="about-block__bottom-elements">
+            <div class="about-block__bottom-icons fire">
+                <svg viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="about-block__bottom-icon">
+                    <polygon points="30.1,84.5 10.2,50 30.1,15.5 69.9,15.5 89.8,50 69.9,84.5"></polygon>
+                </svg>
             </div>
+            <h2>clean&useful</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
         </div>
     </div>
 </div>
@@ -197,7 +201,7 @@
             </div>
         </div>
     </div>
-    <img src="images/red-scroll-bar.png" class="red-scroll-bar" alt="">
+<!--    <img src="images/red-scroll-bar.png" class="red-scroll-bar" alt="">-->
 </div>
 
 <div class="product-features" id="product">
@@ -230,12 +234,31 @@
             </li>
         </ul>
         <a href="#1" class="product-features__button">Free PSD</a>
+        <div class="clearboth"></div>
     </div>
 </div>
 
-<div class="feedback" id="clients">
+<!--<div class="feedback" id="clients">-->
+<!--    <div class="feedback__background-block">-->
+<!--        <div class="feedback__head description">-->
+<!--            <h1>our <span>clients</span></h1>-->
+<!--            <p>Lorem ipsum dolor sit amet, ei duis <span>commune est</span>. Unum noluisse quo ea, no posse-->
+<!--                clita sed. Eu errem gloriatur instructior ius.</p>-->
+<!--        </div>-->
+<!--        <div class="feedback__personal-feedback">-->
+<!--            <h2> happy clients say</h2>-->
+<!--            <p>Lorem ipsum dolor sit amet, ei duis commune est. Unum noluisse quo ea, no posse-->
+<!--                clita sed. Eu errem gloriatur instructior ius.</p>-->
+<!--        </div>-->
+<!--        <div class="feedback__companies">-->
+<!--            <img alt="" src="images/companies/company-1.png">-->
+<!--            <img alt="" src="images/companies/company-2.png">-->
+<!--            <img alt="" src="images/companies/company-3.png">-->
+<!--            <img alt="" src="images/companies/company-4.png">-->
+<!--        </div>-->
+<!--    </div>-->
 
-</div>
+<!--</div>-->
 
 
 </body>
