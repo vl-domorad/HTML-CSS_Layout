@@ -428,18 +428,15 @@ div.product-features {
 }
 
 .product-features__main-content {
-    position: relative;
     text-align: center;
-    z-index: 0;
     font-family: 'Raleway', sans-serif;
+    position: relative;
 }
 
 .product-features__button {
     display: block;
-    width: 16%;
+    width: 15%;
     height: 45px;
-    position: absolute;
-    z-index: 2;
     background-color: #333333;
     border: none;
     color: white;
@@ -449,8 +446,10 @@ div.product-features {
     padding: 13px 0;
     text-align: center;
     text-decoration: none;
-    bottom: 100px;
-    left: 42%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 15vh;
+    left: 36vw;
 }
 
 .product-features__button:hover {
@@ -459,9 +458,18 @@ div.product-features {
 
 .portfolio-block__left-sidebar,
 .portfolio-block__right-sidebar {
-    position: absolute;
-    top: 30px;
     list-style-type: none;
+    display: inline-block;
+}
+
+.portfolio-block__left-sidebar {
+    float: left;
+    /*padding: 0 200px 300px 0;*/
+}
+
+.portfolio-block__right-sidebar {
+    float: right;
+    /*padding: 0 0 300px 200px;*/
 }
 
 .product-features__main-content > ul > li{
@@ -489,4 +497,12 @@ div.product-features {
 .product-features__main-content > ul > li:hover {
     background-color: #ff0036;
     color: white;
+}
+
+.product-features__main-content {
+    background-image: url("images/product-image.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    max-height: 628px;
+    height: 100vh;
 }
