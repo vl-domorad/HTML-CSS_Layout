@@ -328,13 +328,16 @@ span {
 }
 
 .about-block__scroll {
-    width: 100%;
     padding: 60px 0;
-    text-align: center;
     background-image: url("images/scroll-bar.png");
+ }
+
+.scroll-bar {
+    width: 100%;
+    text-align: center;
     background-repeat: no-repeat;
     background-position: center;
- }
+}
 
 /*Icons in the footer of this part*/
 .about-block__bottom-icon {
@@ -448,7 +451,7 @@ span {
     width: 100%;
     background-color: #262626;
     padding-bottom: 50px;
-    /*position: relative;*/
+    position: relative;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -694,16 +697,12 @@ span {
     }
 }
 
-
-
-/*.red-scroll-bar {*/
-/*    display: block;*/
-/*    width: auto;*/
-/*    position: absolute;*/
-/*    margin: 0 auto;*/
-/*    bottom: -10px;*/
-/*    left: 32vw;*/
-/*}*/
+.portfolio-block__scroll {
+    position: absolute;
+    background-image: url("images/red-scroll-bar.png");
+    bottom: -10px;
+    padding: 10px 0;
+}
 
 /*****************************************************/
 /*product features section*/
