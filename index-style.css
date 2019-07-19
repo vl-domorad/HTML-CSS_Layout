@@ -88,31 +88,33 @@ top: 0;
 }
 
 /***************ADAPTIVE**********************/
-/*Slider options*/
+            /*Slider options*/
 
 
 .slider {
     width: 100%;
     overflow: hidden;
     position: relative;
+
 }
 
 .slider__wrap {
     width: 300%;
     transition: .5s;
     display: flex;
+
 }
 
 .slider__image {
     width: 33.333%;
-    max-height: 697px;
 }
 
 .slider__image img {
     width: 100%;
+    max-height: 697px;
 }
 
-/*/*text on the slider*/
+/*text on the slider*/
 
 .slider__text-background {
     width: 100%;
@@ -284,7 +286,7 @@ span {
 }
 
 /******************ADAPTIVE************************/
-/*about section*/
+                /*about section*/
 .about-block {
     font-family: 'Raleway', sans-serif;
     padding: 100px;
@@ -445,7 +447,7 @@ span {
 }
 
 /************************ADAPTIVE*****************************/
-                /*portfolio section*/
+                    /*portfolio section*/
 
 .portfolio-block {
     width: 100%;
@@ -548,13 +550,13 @@ span {
 .portfolio-block__photos-quoter-1 > div:nth-child(odd),
 .portfolio-block__photos-quoter-2  > div:nth-child(even){
     width: 60%;
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .portfolio-block__photos-quoter-1 > div:nth-child(even),
 .portfolio-block__photos-quoter-2 > div:nth-child(odd){
     width: 40%;
-    min-width: 250px;
+    min-width: 230px;
 }
 
 .portfolio-block__design {
@@ -705,7 +707,7 @@ span {
 }
 
 /*****************************************************/
-/*product features section*/
+            /*product features section*/
 
 div.product-features {
     padding: 100px;
@@ -718,12 +720,12 @@ div.product-features {
 .product-features__main-content {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    position: relative;
+    display: flex;
 }
 
 .product-features__button {
-    display: block;
-    width: 15%;
+    align-self: flex-end;
+    width: 15vw;
     height: 45px;
     background-color: #333333;
     border: none;
@@ -734,10 +736,7 @@ div.product-features {
     padding: 13px 0;
     text-align: center;
     text-decoration: none;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 15vh;
-    left: 36vw;
+    margin: 0 auto 100px auto;
 }
 
 .product-features__button:hover {
@@ -747,38 +746,24 @@ div.product-features {
 .portfolio-block__left-sidebar,
 .portfolio-block__right-sidebar {
     list-style-type: none;
-    display: inline-block;
-}
-
-.portfolio-block__left-sidebar {
-    float: left;
-    /*padding: 0 200px 300px 0;*/
-}
-
-.portfolio-block__right-sidebar {
-    float: right;
-    /*padding: 0 0 300px 200px;*/
+    padding: 0;
 }
 
 .product-features__main-content > ul > li{
     width: 25vw;
     border: 1px solid #e7e7e7;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     text-transform: uppercase;
     box-sizing: border-box;
 }
 
 .portfolio-block__left-sidebar li{
-    padding: 10px 60px 10px 30px;
+    padding: 10px 60px 10px 10px;
     text-align: right;
 }
 
-.portfolio-block__right-sidebar {
-    right: 35px;
-}
-
 .portfolio-block__right-sidebar li {
-    padding: 10px 30px 10px 60px;
+    padding: 10px 10px 10px 60px;
     text-align: left;
 }
 
@@ -790,54 +775,97 @@ div.product-features {
 .product-features__main-content {
     background-image: url("images/product-image.png");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center center;
+    background-size: contain;
     max-height: 628px;
     height: 100vh;
 }
+@media all and (max-width: 1190px) {
+    .product-features__main-content > ul > li {
+        background-color: #333333;
+        color: white;
+        width: 30vw;
+    }
+}
 
-.clearboth {
-    clear: both;
-    height: 0;
+@media all and (max-width: 980px) {
+   .product-features__main-content {
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       font-size: 12px;
+   }
+
+    .product-features__button {
+        margin: 0;
+        align-self: initial;
+        width: 20vw;
+        min-width: 150px;
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .product-features__main-content > ul > li {
+        width: 25vw;
+        min-width: 240px;
+    }
+
+    .portfolio-block__left-sidebar li{
+        padding: 10px 60px 10px 5px;
+        text-align: right;
+    }
+
+    .portfolio-block__right-sidebar li {
+        padding: 10px 5px 10px 60px;
+        text-align: left;
+    }
+
+}
+
+@media all and (max-width: 730px) {
+    div.product-features {
+        padding: 50px 10px;
+    }
 }
 /*****************************************************/
-/*Clients feedback section*/
+            /*Clients feedback section*/
 
-.feedback {
-    background-image: url("images/clients-bg.png") ;
-}
+/*.feedback {*/
+/*    background-image: url("images/clients-bg.png") ;*/
+/*}*/
 
-.feedback__background-block {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0, 0.9);
-    box-sizing: border-box;
-    padding: 100px;
-}
+/*.feedback__background-block {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: rgba(0,0,0, 0.9);*/
+/*    box-sizing: border-box;*/
+/*    padding: 100px;*/
+/*}*/
 
-.feedback__head.description h1 {
-    color: white;
-}
+/*.feedback__head.description h1 {*/
+/*    color: white;*/
+/*}*/
 
-.feedback__head.description p {
-    color: #7b7b7c;
-}
+/*.feedback__head.description p {*/
+/*    color: #7b7b7c;*/
+/*}*/
 
-.feedback__personal-feedback {
-    display: inline-block;
-    color: white;
-    width: 50%;
-    overflow: hidden;
-}
+/*.feedback__personal-feedback {*/
+/*    display: inline-block;*/
+/*    color: white;*/
+/*    width: 50%;*/
+/*    overflow: hidden;*/
+/*}*/
 
-.feedback__companies {
-    display: inline-block;
-    width: 45%;
-}
-.personal-feedback-wrap {
-    width: 200%;
-}
-.personal-feedback-first,
-.personal-feedback-second,
-.personal-feedback-third {
-    width: 50%;
-}
+/*.feedback__companies {*/
+/*    display: inline-block;*/
+/*    width: 45%;*/
+/*}*/
+/*.personal-feedback-wrap {*/
+/*    width: 200%;*/
+/*}*/
+/*.personal-feedback-first,*/
+/*.personal-feedback-second,*/
+/*.personal-feedback-third {*/
+/*    width: 50%;*/
+/*}*/
