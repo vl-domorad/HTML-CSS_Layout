@@ -1002,7 +1002,7 @@ h3.feedback__personal-name {
 /*****************************************************/
                     /*Team section*/
 .team {
-    padding: 100px;
+    padding: 70px;
 }
 
 .team__personal-image {
@@ -1030,7 +1030,18 @@ h3.feedback__personal-name {
 
 .team__personal {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.team__personal-card-half {
+    display: flex;
+    /*flex-flow: row wrap;*/
+    width: 50%;
+    justify-content: space-around;
+}
+.team__personal-card {
+    margin: 10px;
+    max-width: 270px;
 }
 
 .team__personal-description {
@@ -1070,4 +1081,31 @@ h3.feedback__personal-name {
 
 .team__personal-card:hover .team__personal-description h3 {
     color: #ff0036;
+}
+
+@media all and (max-width: 1300px ) {
+    .team__personal {
+        flex-direction: column;
+    }
+
+    .team__personal-card-half {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .team {
+        padding: 70px 40px;
+    }
+    .team__personal-card-half {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .team {
+        padding: 70px 20px;
+    }
 }
