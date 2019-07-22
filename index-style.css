@@ -828,7 +828,7 @@ div.product-features {
     }
 }
 
-/*****************************************************/
+/***********************ADAPTIVE******************************/
             /*Clients feedback section*/
 
 .feedback {
@@ -915,6 +915,8 @@ div.product-features {
     height: 114px;
     background-position: center;
     margin: 20px 0;
+    background-repeat: no-repeat;
+    max-width: 270px;
 }
 
 .feedback__personal-feedback-icon{
@@ -952,6 +954,39 @@ h3.feedback__personal-name {
     position: absolute;
     bottom: -10px;
     padding: 10px 0;
+}
+
+@media all and (max-width: 1080px) {
+    .feedback__main-content {
+        align-items: center;
+    }
+    .feedback__companies-half {
+        flex-direction: column;
+    }
+
+    .feedback__companies-half-part {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .feedback__main-content {
+        flex-direction: column;
+    }
+
+    .feedback__main-content > div {
+        width: 100%;
+    }
+
+    .feedback__companies-half-part {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .feedback__background-block {
+        padding: 50px;
+    }
 }
 /*.feedback__companies-half img {*/
 /*    margin: 20px 10px;*/
