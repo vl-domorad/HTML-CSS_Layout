@@ -1184,7 +1184,144 @@ h3.feedback__personal-name {
     }
 }
 
+/*************************ADAPTIVE*****************************/
+                /*services section*/
+
 .services-block {
     background-color: #272727;
     padding: 70px;
+    position: relative;
 }
+
+.services-block__head h1 {
+    color: white;
+}
+
+.services-block__main-content-part {
+    width: 45%;
+    text-align: justify;
+    margin: 30px 20px;
+}
+
+.services-block__main-content-part-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    fill: #a4a4a4;
+    position: relative;
+}
+
+.services-block__main-content-part-icon:before {
+    font-family: icomoon;
+    position: absolute;
+    font-size: 25px;
+    left: 14px;
+    top: 16px;
+    color: #343434;
+}
+
+.dev:before {
+    content:"\ea80";
+}
+
+.html5:before {
+    content: "\f13b";
+    left: 20px;
+}
+
+.wordpress:before {
+    content: "\f19a";
+    left: 17px;
+}
+
+.applications:before {
+    content: "\e959";
+    left: 18px;
+}
+
+.ux-design:before {
+    content: "\f040";
+    left: 20px;
+}
+
+.responsive:before {
+    content: "\f109";
+    left: 17px;
+}
+
+.services-block__main-content-part-head {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.services-block__main-content-part-head h2{
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 18px;
+}
+
+.services-block__main-content-part p {
+    color: #a4a4a4;
+    margin: 0;
+    padding: 20px;
+    background-color: #343434;
+}
+
+.services-block__main-content {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+.services-block__main-content-part:hover .services-block__main-content-part-icon {
+    fill: #ff0036;
+    cursor: pointer;
+}
+
+.services-block__main-content-part:hover p {
+    background-color: #3d2329;
+    cursor: pointer;
+}
+
+.services-block__main-content-part:hover .services-block__main-content-part-icon:before {
+    color: white;
+    cursor: pointer;
+}
+
+.services-block__scroll {
+    background-image: url("images/red-scroll-bar.png");
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    padding: 10px 0;
+}
+
+@media all and (max-width: 960px) {
+    .services-block__main-content-part {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .services-block {
+        padding: 70px 50px;
+    }
+
+    .services-block__head {
+        margin-bottom: 30px;
+    }
+
+    .services-block__main-content-part {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .services-block {
+        padding: 70px 25px;
+    }
+}
+
