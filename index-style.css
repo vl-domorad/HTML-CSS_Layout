@@ -678,8 +678,7 @@ span {
     }
 }
 
-@media all and (max-width: 390px)
-           and (min-width: 320px) {
+@media all and (max-width: 390px) {
     .portfolio-block__design {
         padding: 80px 10px 0 10px;
     }
@@ -999,7 +998,7 @@ h3.feedback__personal-name {
 /*    width: 50%;*/
 /*}*/
 
-/*****************************************************/
+/****************************ADAPTIVE*************************/
                     /*Team section*/
 .team {
     padding: 70px;
@@ -1107,5 +1106,80 @@ h3.feedback__personal-name {
 @media all and (max-width: 420px) {
     .team {
         padding: 70px 20px;
+    }
+}
+
+.team__scroll {
+    background-image: url("images/scroll-bar.png");
+    padding: 10px 0;
+}
+/**************************ADAPTIVE*******************************/
+                    /*skills section*/
+
+.skills {
+    padding: 70px;
+}
+
+.psh {
+    background-image: url("images/skills/skills-90.png");
+}
+.html {
+    background-image: url("images/skills/skills-80.png");
+}
+.php {
+    background-image: url("images/skills/skills-70.png");
+}
+.wp {
+    background-image: url("images/skills/skills-90.png");
+}
+
+.skills__main-content-part-image {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skills__main-content-part {
+    max-width: 170px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 0 20px;
+}
+
+.skills__main-content-part h3 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+.skills__main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.skills__main-content-half {
+    display: flex;
+}
+
+@media all and (max-width: 980px) {
+    .skills__main-content {
+        flex-direction: column;
+    }
+
+    .skills__main-content-half {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .skills {
+        padding: 70px 50px;
+    }
+}
+
+@media all and (max-width: 470px) {
+    .skills__main-content-half {
+        flex-direction: column;
+        align-items: center;
     }
 }
