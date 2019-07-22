@@ -998,3 +998,76 @@ h3.feedback__personal-name {
 /*.personal-feedback-second {*/
 /*    width: 50%;*/
 /*}*/
+
+/*****************************************************/
+                    /*Team section*/
+.team {
+    padding: 100px;
+}
+
+.team__personal-image {
+    width: 270px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.person-1 {
+    background-image: url("images/team/team-1.png");
+}
+
+.person-2 {
+    background-image: url("images/team/team-1.png");
+}
+
+.person-3 {
+    background-image: url("images/team/team-2.png");
+}
+
+.person-4 {
+    background-image: url("images/team/team-3.png");
+}
+
+.team__personal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__personal-description {
+    text-align: center;
+    color: #333333;
+    border: 1px solid #7b7b7c;
+}
+
+.team__personal-description h3 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.team__personal-description p {
+    font-family: 'Lato', sans-serif;
+
+}
+
+.team__personal-image-social {
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.team__personal-image-social > svg {
+    width: 50px;
+    height: 50px;
+}
+
+.team__personal-card:hover .team__personal-image-social{
+    display: block;
+}
+
+.team__personal-card:hover .team__personal-description h3 {
+    color: #ff0036;
+}
