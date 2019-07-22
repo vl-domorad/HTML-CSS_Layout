@@ -1268,6 +1268,7 @@ h3.feedback__personal-name {
     margin: 0;
     padding: 20px;
     background-color: #343434;
+    font-family: 'Lato', sans-serif;
 }
 
 .services-block__main-content {
@@ -1325,3 +1326,106 @@ h3.feedback__personal-name {
     }
 }
 
+/*************************ADAPTIVE*****************************/
+                    /*bestseller section*/
+.bestseller {
+    padding: 70px;
+}
+
+.bestseller__main-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.bestseller__main-content-half {
+    display: flex;
+}
+.bestseller__main-part {
+    list-style-type: none;
+    padding: 0;
+    width: 45%;
+    font-family: 'Lato', sans-serif;
+    min-width: 200px;
+    margin: 15px 20px;
+}
+
+.bestseller__main-part li {
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    color: #333333;
+}
+
+li.bestseller__main-head {
+    background-color: #333333;
+    color: white;
+}
+
+.bestseller__main-accent {
+    background-color: #e7e7e7;
+}
+.bestseller__main-head,
+.bestseller__main-uppercase {
+    text-transform: uppercase;
+}
+
+.bestseller__bold-big {
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+}
+
+.bestseller__main-uppercase,
+.bestseller__main-item {
+    font-size: small;
+    border: 1px solid #e7e7e7;
+}
+
+.bestseller__order {
+    padding: 10px 10px;
+    border: 1px solid #e7e7e7;
+}
+
+.bestseller__order-now {
+    display: block;
+    width: 90%;
+    text-decoration: none;
+    color: white;
+    background-color: #333333;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.bestseller__main-part:hover .bestseller__main-accent,
+.bestseller__main-part:hover a,
+.bestseller__main-part:hover span {
+    background-color: #ff0036;
+    color: white;
+}
+
+@media all and (max-width: 960px) {
+    .bestseller__main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .bestseller {
+        padding: 70px 40px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .bestseller__main-content-half {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bestseller__main-part {
+        width: 100%;
+    }
+}
