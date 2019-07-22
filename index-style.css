@@ -1183,3 +1183,8 @@ h3.feedback__personal-name {
         align-items: center;
     }
 }
+
+.services-block {
+    background-color: #272727;
+    padding: 70px;
+}
