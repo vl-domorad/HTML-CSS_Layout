@@ -19,6 +19,7 @@
 
 body {
     margin: 0;
+    position: relative;
 }
 /*****************************************************/
             /* menu and logotype section*/
@@ -1733,3 +1734,102 @@ li.bestseller__main-head {
         flex-direction: column;
     }
 }
+
+/*****************************************************/
+                    /*contacts block*/
+.contact-block__head {
+    padding: 70px;
+    margin-bottom: 0;
+}
+
+.contact-block__map {
+    width: 50%;
+}
+
+.contact-block__main-content {
+    display: flex;
+}
+
+.contact-block__form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+.contact-block__form h2 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.contact-block__form input {
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #a4a4a4;
+    padding-left: 10px;
+    color: #333333;
+}
+
+.contact-block__form textarea {
+    margin: 10px;
+    min-height: 70px;
+}
+
+input.submit-button {
+    /*display: block;*/
+    text-align: center;
+    width: 150px;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 10px 30px;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.submit-area {
+    text-align: right;
+}
+
+footer {
+    background-image: url("images/logo-name.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    background-color: #333333;
+    text-align: right;
+    color: #a4a4a4;
+    font-family: 'Lato', sans-serif;
+}
+
+@media all and (max-width: 700px) {
+    .contact-block__head {
+        padding: 50px 40px;
+    }
+
+    .contact-block__main-content {
+        flex-direction: column;
+    }
+
+    .contact-block__map {
+        width: 100%;
+    }
+
+    .contact-block__form {
+        width: 100%;
+    }
+
+    footer {
+        background-position: left;
+    }
+}
+
+
+
