@@ -1631,3 +1631,105 @@ li.bestseller__main-head {
         min-width: 280px;
     }
 }
+
+/*****************************************************/
+                    /*follow block*/
+
+.follow {
+    background-image: url("images/slider-img.png");
+    background-position: 10px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.follow__background {
+    padding: 70px 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+.follow__background h1 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.follow__main {
+    display: flex;
+    justify-content: center;
+}
+
+.follow__main-half {
+    display: flex;
+}
+
+.follow__icon > a {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+.follow__icon {
+    position: relative;
+    margin: 0 10px;
+}
+
+.follow__icon-border{
+    fill: transparent;
+    stroke:  #ff0036;
+}
+
+.follow__icon p {
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.follow__icon:before {
+    font-family: "icomoon";
+    font-size: 30px;
+    position: absolute;
+    color: #ff0036;
+    left: 37px;
+    top: 33px;
+}
+
+.facebook:before {
+    content: "\f09a";
+}
+
+.twitter-1:before {
+    content: "\f099";
+}
+
+.pinterest:before {
+    content: "\f0d2";
+}
+
+.google:before {
+    content: "\ea8b";
+}
+
+.follow__icon:hover svg{
+    fill: #ff0036;
+}
+
+.follow__icon:hover:before{
+    color: white;
+    cursor: pointer;
+}
+
+.follow__scroll {
+     background-image: url("images/red-scroll-bar.png");
+     position: absolute;
+     bottom: -10px;
+     left: 0;
+     padding: 10px 0;
+ }
+
+@media all and (max-width: 510px) {
+    .follow__main {
+        align-items: center;
+        flex-direction: column;
+    }
+}
