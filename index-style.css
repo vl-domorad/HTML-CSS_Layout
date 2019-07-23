@@ -574,6 +574,12 @@ span > a {
     display: none;
 }
 
+.portfolio-block__photos a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
 .portfolio-block__design p:before {
     font-family: 'icomoon';
     content: "\f067";
