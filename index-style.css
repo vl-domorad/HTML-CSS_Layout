@@ -419,6 +419,10 @@ span > a {
     color: white;
 }
 
+.about-block__bottom > div:hover {
+    cursor: pointer;
+}
+
 @media all and (max-width: 1080px) {
     .about-block__main-content {
         flex-direction: column-reverse;
@@ -780,6 +784,7 @@ div.product-features {
 .product-features__main-content > ul > li:hover {
     background-color: #ff0036;
     color: white;
+    cursor: pointer;
 }
 
 .product-features__main-content {
@@ -1093,6 +1098,10 @@ h3.feedback__personal-name {
     color: #ff0036;
 }
 
+.team__personal-card:hover {
+    cursor: pointer;
+}
+
 @media all and (max-width: 1300px ) {
     .team__personal {
         flex-direction: column;
@@ -1295,11 +1304,13 @@ h3.feedback__personal-name {
 
 .services-block__main-content-part:hover p {
     background-color: #3d2329;
-    cursor: pointer;
 }
 
 .services-block__main-content-part:hover .services-block__main-content-part-icon:before {
     color: white;
+}
+
+.services-block__main-content-part:hover {
     cursor: pointer;
 }
 
@@ -1415,6 +1426,10 @@ li.bestseller__main-head {
 .bestseller__main-part:hover span {
     background-color: #ff0036;
     color: white;
+}
+
+.bestseller__main-part:hover {
+    cursor: pointer;
 }
 
 @media all and (max-width: 960px) {
@@ -1596,6 +1611,10 @@ li.bestseller__main-head {
 
 .blog-block__main-news-1-button:hover {
     background-color: #ff0036;
+}
+
+.blog-block__main-news-1:hover {
+    cursor: pointer;
 }
 
 .image-2 {
