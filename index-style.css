@@ -157,6 +157,10 @@ top: 0;
 span {
     color: #ff0036;
 }
+span > a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /*Buttons on slider*/
 .slider__buttons {
