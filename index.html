@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Creativia</title>
-    <link href="index-style.css" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="styles/index-style.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
-<!--<div class="header" id="home">-->
-<!--    <a href="#home"><img src="images/logotype.png" class="header__logo" alt="Logotype border image"></a>-->
-<!--    <nav>-->
-<!--        <ul class="header__menu">-->
-<!--            <li><a href="#home">home</a></li>-->
-<!--            <li><a href="#about">about us</a></li>-->
-<!--            <li><a href="#portfolio">portfolio</a></li>-->
-<!--            <li><a href="#clients">clients</a></li>-->
-<!--            <li><a href="#our-team">team</a></li>-->
-<!--            <li><a href="#services">services</a></li>-->
-<!--            <li><a href="#blog">blog</a></li>-->
-<!--            <li><a href="#contacts">contact</a></li>-->
-<!--        </ul>-->
-<!--    </nav>-->
-<!--</div>-->
+<div class="header" id="home">
+    <a href="#home"><img src="images/logotype.png" class="header__logo" alt="Logotype border image"></a>
+    <nav>
+        <div class="header__mobile-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="header__menu">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about us</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#clients">clients</a></li>
+            <li><a href="#our-team">team</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#contacts">contact</a></li>
+        </ul>
+
+        <script type="text/javascript" src="scripts/menu.js"></script>
+    </nav>
+</div>
 
 <section class="slider">
     <div class="slider__wrap" id="slider__wrap-id">
@@ -56,7 +65,7 @@
         </div>
     </div>
 </section>
-<script type="text/javascript" src="slider.js"></script>
+<script type="text/javascript" src="scripts/slider.js"></script>
 
 <div class="about-block" id="about">
     <div class="about-block_head description">

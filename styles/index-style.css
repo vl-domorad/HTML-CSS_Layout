@@ -8,11 +8,11 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?e00zke');
-    src:  url('fonts/icomoon.eot?e00zke#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?e00zke') format('truetype'),
-    url('fonts/icomoon.woff?e00zke') format('woff'),
-    url('fonts/icomoon.svg?e00zke#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?e00zke');
+    src:  url('../fonts/icomoon.eot?e00zke#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?e00zke') format('truetype'),
+    url('../fonts/icomoon.woff?e00zke') format('woff'),
+    url('../fonts/icomoon.svg?e00zke#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,18 +27,21 @@ body {
 ul.header__menu {
     font-family: 'Raleway', sans-serif;
     list-style-type: none;
+    box-sizing: border-box;
     margin: 0;
-    padding-left: 30%;
+    padding: 0 10px 0 130px;
     text-transform: uppercase;
     background-color: #262626;
     color: #7b7b7c;
     position: fixed;
     z-index: 3;
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .header__menu li {
-    display: inline-block;
+
 }
 
 .header__menu a {
@@ -88,6 +91,99 @@ top: 0;
     bottom: 0;
 }
 
+.header__mobile-icon {
+    display: none;
+    width: 10%;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header__mobile-icon span {
+    display: block;
+    position: fixed;
+    height: 7px;
+    width: 40px;
+    background-color: #ff0036;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .2s ease-in-out;
+}
+
+.header__mobile-icon span:nth-child(1) {
+    top: 5px;
+    left: 5px;
+}
+
+.header__mobile-icon span:nth-child(2),
+.header__mobile-icon span:nth-child(3) {
+    top: 15px;
+    left:5px;
+}
+
+.header__mobile-icon span:nth-child(4) {
+    top: 26px;
+    left: 5px;
+
+}
+
+nav.menu_state_open .header__mobile-icon span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: -50%;
+}
+
+nav.menu_state_open .header__mobile-icon span:nth-child(2) {
+    transform: rotate(45deg);
+
+}
+
+nav.menu_state_open  .header__mobile-icon span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+nav.menu_state_open  .header__mobile-icon span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: -50%;
+}
+
+nav.menu_state_open .header__menu {
+    display: block;
+}
+
+@media all and (max-width: 1080px) {
+    .header__logo {
+        display: none;
+    }
+
+    ul.header__menu {
+        padding: 0 30px;
+    }
+}
+
+@media all and (max-width: 980px) {
+    ul.header__menu {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        margin-top: 52px;
+        z-index: 3;
+        overflow: auto;
+    }
+    ul.header__menu li a{
+        padding: 15px 10px;
+    }
+    .header__mobile-icon{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 3;
+    }
+}
 /***************ADAPTIVE**********************/
             /*Slider options*/
 
@@ -336,7 +432,7 @@ span > a {
 
 .about-block__scroll {
     padding: 60px 0;
-    background-image: url("images/scroll-bar.png");
+    background-image: url("../images/scroll-bar.png");
  }
 
 .scroll-bar {
@@ -505,35 +601,35 @@ span > a {
 }
 
 .part-1 {
-    background-image: url("images/portfolio/portfolio-1.png");
+    background-image: url("../images/portfolio/portfolio-1.png");
 }
 
 .part-2 {
-    background-image: url("images/portfolio/portfolio-2.png");
+    background-image: url("../images/portfolio/portfolio-2.png");
 }
 
 .part-3 {
-    background-image: url("images/portfolio/portfolio-3.png");
+    background-image: url("../images/portfolio/portfolio-3.png");
 }
 
 .part-4 {
-    background-image: url("images/portfolio/portfolio-4.png");
+    background-image: url("../images/portfolio/portfolio-4.png");
 }
 
 .part-5 {
-    background-image: url("images/portfolio/portfolio-5.png");
+    background-image: url("../images/portfolio/portfolio-5.png");
 }
 
 .part-6 {
-    background-image: url("images/portfolio/portfolio-6.png");
+    background-image: url("../images/portfolio/portfolio-6.png");
 }
 
 .part-7 {
-    background-image: url("images/portfolio/portfolio-7.png");
+    background-image: url("../images/portfolio/portfolio-7.png");
 }
 
 .part-8 {
-    background-image: url("images/portfolio/portfolio-8.png");
+    background-image: url("../images/portfolio/portfolio-8.png");
 }
 
 .portfolio-block__photos {
@@ -715,7 +811,7 @@ span > a {
 
 .portfolio-block__scroll {
     position: absolute;
-    background-image: url("images/red-scroll-bar.png");
+    background-image: url("../images/red-scroll-bar.png");
     bottom: -10px;
     padding: 10px 0;
 }
@@ -814,7 +910,7 @@ div.product-features {
 }
 
 .product-features__main-content {
-    background-image: url("images/product-image.png");
+    background-image: url("../images/product-image.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -876,7 +972,7 @@ div.product-features {
             /*Clients feedback section*/
 
 .feedback {
-    background-image: url("images/clients-bg.png");
+    background-image: url("../images/clients-bg.png");
     position: relative;
 }
 
@@ -939,19 +1035,19 @@ div.product-features {
 }
 
 .company-1 {
-    background-image: url("images/companies/company-1.png");
+    background-image: url("../images/companies/company-1.png");
 }
 
 .company-2 {
-    background-image: url("images/companies/company-2.png");
+    background-image: url("../images/companies/company-2.png");
 }
 
 .company-3 {
-    background-image: url("images/companies/company-3.png");
+    background-image: url("../images/companies/company-3.png");
 }
 
 .company-4 {
-    background-image: url("images/companies/company-4.png");
+    background-image: url("../images/companies/company-4.png");
 }
 
 .feedback__companies-half-part {
@@ -973,7 +1069,7 @@ div.product-features {
     width: 70px;
     height: 70px;
     fill: transparent;
-    background-image:  url("images/companies/icon image.png");
+    background-image:  url("../images/companies/icon image.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1000,7 +1096,7 @@ h3.feedback__personal-name {
 }
 
 .feedback__scroll {
-    background-image: url("images/red-scroll-bar.png");
+    background-image: url("../images/red-scroll-bar.png");
     position: absolute;
     bottom: -10px;
     padding: 10px 0;
@@ -1063,19 +1159,19 @@ h3.feedback__personal-name {
 }
 
 .person-1 {
-    background-image: url("images/team/team-1.png");
+    background-image: url("../images/team/team-1.png");
 }
 
 .person-2 {
-    background-image: url("images/team/team-1.png");
+    background-image: url("../images/team/team-1.png");
 }
 
 .person-3 {
-    background-image: url("images/team/team-2.png");
+    background-image: url("../images/team/team-2.png");
 }
 
 .person-4 {
-    background-image: url("images/team/team-3.png");
+    background-image: url("../images/team/team-3.png");
 }
 
 .team__personal {
@@ -1205,7 +1301,7 @@ h3.feedback__personal-name {
 }
 
 .team__scroll {
-    background-image: url("images/scroll-bar.png");
+    background-image: url("../images/scroll-bar.png");
     padding: 10px 0;
 }
 /**************************ADAPTIVE*******************************/
@@ -1216,16 +1312,16 @@ h3.feedback__personal-name {
 }
 
 .psh {
-    background-image: url("images/skills/skills-90.png");
+    background-image: url("../images/skills/skills-90.png");
 }
 .html {
-    background-image: url("images/skills/skills-80.png");
+    background-image: url("../images/skills/skills-80.png");
 }
 .php {
-    background-image: url("images/skills/skills-70.png");
+    background-image: url("../images/skills/skills-70.png");
 }
 .wp {
-    background-image: url("images/skills/skills-90.png");
+    background-image: url("../images/skills/skills-90.png");
 }
 
 .skills__main-content-part-image {
@@ -1390,7 +1486,7 @@ h3.feedback__personal-name {
 }
 
 .services-block__scroll {
-    background-image: url("images/red-scroll-bar.png");
+    background-image: url("../images/red-scroll-bar.png");
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -1537,7 +1633,7 @@ li.bestseller__main-head {
 .twitter-citation {
     padding: 150px 300px 100px 300px;
     background-color: #272727;
-    background-image: url("images/twitter-bg.png");
+    background-image: url("../images/twitter-bg.png");
     background-repeat: no-repeat;
     background-position: 20px bottom;
     position: relative;
@@ -1562,7 +1658,7 @@ li.bestseller__main-head {
 }
 
 .twitter-citation__scroll {
-    background-image: url("images/red-scroll-bar.png");
+    background-image: url("../images/red-scroll-bar.png");
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -1604,7 +1700,7 @@ li.bestseller__main-head {
 }
 
 .image-1 {
-    background-image: url("images/blog/blog-1.png");
+    background-image: url("../images/blog/blog-1.png");
 }
 
 .blog-block__main-news-1-background {
@@ -1693,7 +1789,7 @@ li.bestseller__main-head {
 }
 
 .image-2 {
-    background-image: url("images/blog/blog-2.png");
+    background-image: url("../images/blog/blog-2.png");
 }
 
 .blog-block__down-button {
@@ -1704,7 +1800,7 @@ li.bestseller__main-head {
     outline: none;
     width: 45px;
     height: 45px;
-    background-image: url("images/load_more.png");
+    background-image: url("../images/load_more.png");
     background-position: center;
     margin: 0 auto;
 }
@@ -1741,7 +1837,7 @@ li.bestseller__main-head {
                     /*follow block*/
 
 .follow {
-    background-image: url("images/slider-img.png");
+    background-image: url("../images/slider-img.png");
     background-position: 10px 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1825,7 +1921,7 @@ li.bestseller__main-head {
 }
 
 .follow__scroll {
-     background-image: url("images/red-scroll-bar.png");
+     background-image: url("../images/red-scroll-bar.png");
      position: absolute;
      bottom: -10px;
      left: 0;
@@ -1903,7 +1999,7 @@ input.submit-button {
 }
 
 footer {
-    background-image: url("images/logo-name.png");
+    background-image: url("../images/logo-name.png");
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
