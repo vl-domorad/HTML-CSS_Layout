@@ -1063,10 +1063,11 @@ div.product-features {
     padding: 25px 0;
 }
 
-.feedback__personal-feedback-wrap h3 {
+.feedback__personal-feedback h3 {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     color: white;
+    text-align: center;
 }
 
 .feedback__main-content {
@@ -1154,6 +1155,14 @@ h3.feedback__personal-name {
    font-family: 'Raleway', sans-serif;
 }
 
+.feedback__companies-half img {
+    margin: 20px 10px;
+}
+
+.feedback__personal-feedback-first{
+    width: 100%;
+}
+
 .feedback__scroll {
     background-image: url("../images/red-scroll-bar.png");
     position: absolute;
@@ -1193,16 +1202,6 @@ h3.feedback__personal-name {
         padding: 50px;
     }
 }
-/*.feedback__companies-half img {*/
-/*    margin: 20px 10px;*/
-/*}*/
-/*.personal-feedback-wrap {*/
-/*    width: 400%;*/
-/*}*/
-/*.personal-feedback-first,*/
-/*.personal-feedback-second {*/
-/*    width: 50%;*/
-/*}*/
 
 /****************************ADAPTIVE*************************/
                     /*Team section*/
